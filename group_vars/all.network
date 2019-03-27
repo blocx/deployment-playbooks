@@ -18,7 +18,7 @@ ntpservers:
   - "server 3.us.pool.ntp.org"
 
 image: "ami-0b383171"
-region: "us-east-1"
+region: "us-west-2"
 
 NODE_PWD: "node.pwd" # don't change this one
 NODE_SOURCE_DEB: "https://deb.nodesource.com/node_8.x"
@@ -27,13 +27,13 @@ PARITY_BIN_SHA256: "9abd1aaa60d23aa5eb99d9392b203e837679a64f03662bf1057712d9c2cb
 ORCHESTRATOR_BIN_LOC: ""
 ORCHESTRATOR_BIN_SHA256: ""
 
-SCRIPTS_MOC_BRANCH: "sokol"
-SCRIPTS_VALIDATOR_BRANCH: "sokol"
-MAIN_REPO_FETCH: "poanetwork"
-GENESIS_BRANCH: "sokol"
-GENESIS_NETWORK_NAME: "Sokol"
+SCRIPTS_MOC_BRANCH: "blocx"
+SCRIPTS_VALIDATOR_BRANCH: "blocx"
+MAIN_REPO_FETCH: "blocx"
+GENESIS_BRANCH: "blocx"
+GENESIS_NETWORK_NAME: "BlocX"
 
-MOC_ADDRESS: "0xe8ddc5c7a2d2f0d7a9798459c0104fdf5e987aca"
+MOC_ADDRESS: "0x9c7b78397c6763da61bde82201bf400fa269e6ce"
 BLK_GAS_LIMIT: "8000000"
 
 #bootnode
