@@ -17,7 +17,7 @@ ntpservers:
   - "server 2.us.pool.ntp.org"
   - "server 3.us.pool.ntp.org"
 
-image: "ami-0b383171"
+image: "ami-061392db613a6357b"
 region: "us-west-2"
 
 NODE_PWD: "node.pwd" # don't change this one
@@ -37,7 +37,7 @@ MOC_ADDRESS: "0x9c7b78397c6763da61bde82201bf400fa269e6ce"
 BLK_GAS_LIMIT: "8000000"
 
 #bootnode
-bootnode_instance_type: "t2.large"
+bootnode_instance_type: "t2.micro"
 bootnode_instance_name: "bootnode"
 bootnode_count_instances: "1"
 bootnode_security_group: "{{ MAIN_REPO_FETCH }}-{{ GENESIS_BRANCH }}-bootnode-security"
@@ -45,33 +45,33 @@ bootnode_archive: "off"
 bootnode_orchestrator: "off"
 
 #netstat
-netstat_instance_type: "t2.large"
+netstat_instance_type: "t2.micro"
 netstat_instance_name: "netstat"
 netstat_count_instances: "1"
 netstat_security_group: "{{ MAIN_REPO_FETCH }}-{{ GENESIS_BRANCH }}-netstat-security"
 
 #validator
-validator_instance_type: "t2.large"
+validator_instance_type: "t2.micro"
 validator_instance_name: "validator"
 validator_count_instances: "1"
 validator_security_group: "{{ MAIN_REPO_FETCH }}-{{ GENESIS_BRANCH }}-validator-security"
 validator_archive: "off"
 
 #moc
-moc_instance_type: "t2.large"
+moc_instance_type: "t2.micro"
 moc_instance_name: "moc"
 moc_count_instances: "1"
 moc_security_group: "{{ MAIN_REPO_FETCH }}-{{ GENESIS_BRANCH }}-moc-security"
 moc_archive: "off"
 
 #explorer
-explorer_instance_type: "t2.large"
+explorer_instance_type: "t2.micro"
 explorer_instance_name: "explorer"
 explorer_count_instances: "1"
 explorer_security_group: "{{ MAIN_REPO_FETCH }}-{{ GENESIS_BRANCH }}-explorer-security"
 
 #Blockscout
-blockscout_instance_type: "t2.large"
+blockscout_instance_type: "t2.micro"
 blockscout_instance_name: "blockscout"
 blockscout_count_instances: "1"
 blockscout_security_group: "{{ MAIN_REPO_FETCH }}-{{ GENESIS_BRANCH }}-blockscout-security"
